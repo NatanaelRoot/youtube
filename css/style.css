@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Reinicio de las etiquetas */
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    margin: 0;
+}
+
+input {
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* User YouTube: Primera pantalla de la app */
+
+.user-youtube {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-youtube__logo-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.user-youtube__logo {
+    width: 100%;
+    max-width: 140px;
+}
+
+.user-youtube__text {
+    font-size: 2.1em;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+.user-youtube__user-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    padding: 2em;
+    
+    margin-bottom: 1em;
+
+}
+
+.user-youtube__icon-container {
+    width: 100%;
+}
+
+.user-youtube__icon {
+    width: 100%;
+    max-width: 250px;
+    min-width: 200px;
+    aspect-ratio: 5/5;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #0003;
+    cursor: pointer;
+}
+
+.user-youtube__icon-container--not {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.user-youtube__icon-container--not i {
+    position: absolute;
+    color: #fff;
+    font-size: 3.3em;
+}
+
+.user-youtube__icon--not {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-youtube__text-container {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 1em;
+}
+
+.user-youtube__user-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.user-youtube__user-email {
+    color: #fff;
+    visibility: hidden;
+}
+
+.user-youtube__btn-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-youtube__btn {
+    width: 50px;
+    height: 50px;
+    background-color: #313030;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.user-youtube__btn:hover {
+    outline: 2px solid #fff;
+    cursor: pointer;
+}
+
+.user-youtube__btn i {
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.user-youtube__option-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2em;
+}
+
+.user-youtube__option {
+    width: 30%;
+    padding: 1em;
+    background-color: #313030;
+    border-radius: 2em;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+    cursor: pointer;
+}
+
+.user-youtube__option span {
+    color: #fff;
+}
+
+.user-youtube__option i {
+    color: #fff;
+}
+
+
+/* Mostrar elementos de usuario */
+
+.user-youtube__user:hover .user-youtube__user-email {
+    visibility: visible;
+}
+
+.user-youtube__user:hover .user-youtube__icon {
+    outline: 5px solid #fff;
+}
+
+.user-youtube__user:hover .user-youtube__btn {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HORA DE SER RESPONSIVO = MOBILE VERSION */
+
+@media screen and (max-width: 940px) {
+
+    .user-youtube {
+        width: 90%;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .user-youtube__user-container {
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    .user-youtube__option {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .user-youtube__option {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 559px) {
+
+    .user-youtube__text {
+        font-size: 2.1em;
+    }
+
+    .user-youtube__option-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .user-youtube__option {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 387px) {
+
+    .user-youtube__text {
+        font-size: 1.8em;
+    }
+
+}
+
+
+
+
+
+
+.caja {
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+.texto {
+    font-size: 2em;
+    
+}
+
+
+.imagen {
+    width: 100%;
+    margin: auto;
+    max-width: 400px;
+}
+
+.imagen, .caja:hover .dino-gif {
+    visibility: visible;
+}
+
+.dino-gif, .caja:hover .imagen {
+    visibility: hidden;
+}
